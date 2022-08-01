@@ -1,0 +1,82 @@
+.container {
+  width: 1200px;
+}
+
+/* 
+.header;;
+ */
+.header {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header nav > ul {
+  display: flex;
+}
+/* 
+.header;;
+ */
+
+/* 
+.main_visual;;
+ */
+.main_visual {
+  background: #ddd;
+}
+/* 
+.main_visual;;
+ */
+
+/* 
+.c01;;
+ */
+.c01 {
+  background: #fff;
+}
+/* 
+.c01;;
+ */
+
+/* 
+.c02;;
+ */
+.c02 {
+  background: #ddd;
+}
+/* 
+.c02;;
+ */
+
+/* 
+.c03;;
+ */
+.c03 {
+  background: #fff;
+}
+/* 
+.c03;;
+ */
+
+/* 
+.c04;;
+ */
+.c04 {
+  background: #ddd;
+}
+/* 
+.c04;;
+ */
+
+/* 
+.c05;;
+ */
+.c05 {
+  background: #fff;
+}
+/* 
+.c05;;
+ */
