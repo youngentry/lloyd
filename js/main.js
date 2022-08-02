@@ -1,3 +1,5 @@
 $(function () {
-  $("body").css("background", "#fff");
+  $(".mainSlider").slick({});
+
+  $(".featureSlider").slick({});
 });
