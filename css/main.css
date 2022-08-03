@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
 :root {
   --mc: #2c4c3f;
 }
@@ -215,7 +215,7 @@ body {
   text-align: right;
   line-height: 1.4;
   text-transform: uppercase;
-  padding: 40px 60px 300px 0 ;
+  padding: 40px 60px 300px 0;
 }
 .model .txt {
   text-align: right;
@@ -255,10 +255,10 @@ body {
   height: 600px;
 }
 .feature01 {
-  background: url(../img/feature/JW20190215102104263001.jpg) no-repeat center center/contain;
+  background: url(../img/feature/r01.png) no-repeat center center/contain;
 }
 .feature02 {
-  background: url(../img/feature/JW20220503110510955001.jpg) no-repeat center center/contain;
+  background: url(../img/feature/r02.png) no-repeat center center/contain;
 }
 .feature03 {
   background: url(../img/feature/JW20220715164256149001.jpg) no-repeat center center/contain;
@@ -277,8 +277,7 @@ body {
 .custom;;
  */
 .custom {
-  /* height: 100px; */
-  /* background: url(../img/rowlong/20220712162146457001.jpg) no-repeat center center/contain; */
+  padding-bottom: 100px;
 }
 /* 
 .custom;;
@@ -286,6 +285,86 @@ body {
 
 /* 
  .tab;; */
-dis
+.tab {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.tab .container {
+  text-align: center;
+}
+.tab .category {
+  display: flex;
+}
+.tab .category li {
+  flex: 1;
+}
+.tab .neck {
+  display: flex;
+}
+.tab figure {
+  height: 150px;
+  width: 150px;
+}
+.tab figure:nth-child(1) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(2) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(3) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(4) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(5) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(6) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(7) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(8) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(9) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(10) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(11) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(12) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(13) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(14) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(15) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(16) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(17) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(18) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(19) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
+.tab figure:nth-child(20) {
+  background: url(../img/necklace_s/JW20211012095642451001.jpg) no-repeat center/contain;
+}
 /* 
  .tab;; */

@@ -11,6 +11,7 @@ $(function () {
   });
 
   // $(".mainSlider").on("mouseenter", function (e) {
+  //   $(".mainSlider").slick("unslick");
   //   $(".mainSlider").slick({
   //     arrows: false,
   //     autoplay: true,
