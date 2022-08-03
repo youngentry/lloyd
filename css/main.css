@@ -25,13 +25,14 @@ body {
   bottom: 15px;
 }
 .mouseCircle {
+  /* display: none; */
   position: absolute;
   font-size: 0;
   top: 0;
   left: 0;
   border-radius: 50%;
-  /* transition: 0.1s; */
-  z-index: 999;
+  transition: 0.1s;
+  z-index: -1;
 }
 .mouseCircle::before {
   content: "";
@@ -211,14 +212,13 @@ body {
 .model h2 {
   font-size: 160px;
   font-weight: 900;
-  text-align: center;
+  text-align: right;
   line-height: 1.4;
   text-transform: uppercase;
-  padding-top: 40px;
-  padding-bottom: 300px;
+  padding: 40px 60px 300px 0 ;
 }
 .model .txt {
-  text-align: center;
+  text-align: right;
   padding-right: 60px;
 }
 .model strong {
@@ -283,3 +283,9 @@ body {
 /* 
 .custom;;
  */
+
+/* 
+ .tab;; */
+dis
+/* 
+ .tab;; */

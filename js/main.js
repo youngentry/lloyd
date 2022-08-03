@@ -2,21 +2,28 @@ $(function () {
   $(".mainSlider").slick({
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 0,
-    speed: 10000,
+    // autoplaySpeed: 0,
+    speed: 500,
     pauseOnFocus: false,
     pauseOnHover: false,
     slidesToShow: 1,
     cssEase: "linear",
   });
 
-  $(".mainSlider").on("mouseenter", function (e) {
-    $("init .mainSlider").slick({
-      autoplay: false,
-      // pauseOnHover: true,
-    });
-    console.log("asd");
-  });
+  // $(".mainSlider").on("mouseenter", function (e) {
+  //   $(".mainSlider").slick({
+  //     arrows: false,
+  //     autoplay: true,
+  //     autoplaySpeed: 0,
+  //     speed: 10000,
+  //     pauseOnFocus: false,
+  //     pauseOnHover: false,
+  //     slidesToShow: 1,
+  //     cssEase: "linear",
+  //     // pauseOnHover: true,
+  //   });
+  //   console.log("asd");
+  // });
 
   $(".featureSlider").slick({});
 
