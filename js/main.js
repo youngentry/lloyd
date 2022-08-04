@@ -13,6 +13,8 @@ $(function () {
   $(".bestSlider").slick({
     arrows: false,
     asNavFor: ".productName",
+    centerMode: true,
+    centerPadding: "25%",
   });
 
   $(".productName").slick({
