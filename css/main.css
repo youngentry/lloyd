@@ -103,20 +103,22 @@ body {
   padding-bottom: 150px;
 }
 .mainVisual .mainBg {
-  position: relative;
   height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
   width: 100%;
 }
 .mainVisual .mainBg01 {
-  background: url(../img/main/20220728163824091001.jpg);
+  background: url(../img/main/20220728163824091001.jpg) no-repeat center center/cover;
 }
 .mainVisual .mainBg02 {
   color: #000;
-  background: url(../img/main/20220728120522894001.jpg);
+  background: url(../img/main/20220728120522894001.jpg) no-repeat center center/cover;
 }
 .mainVisual .mainBg03 {
   color: #000;
-  background: url(../img/main/20220126133801714001.jpg);
+  background: url(../img/main/20220126133801714001.jpg) no-repeat center center/cover;
 }
 .mainVisual .slick-arrow {
   position: absolute;
@@ -125,10 +127,10 @@ body {
   z-index: 999;
 }
 .mainVisual .inner {
-  position: absolute;
+  /* position: absolute;
   top: 33%;
   left: 18.7%;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025em; */
 }
 .mainVisual .inner h2 {
   font-size: 33px;
