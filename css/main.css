@@ -6,6 +6,7 @@
 }
 
 body {
+  font-family: "Gowun Batang", serif;
   background: var(--mc);
   color: #fff;
 }
@@ -31,17 +32,28 @@ body {
   top: 0;
   left: 0;
   border-radius: 50%;
-  transition: 0.1s;
   z-index: -1;
+  transition: 0.3s;
 }
-.mouseCircle::before {
+.mouseCircle.lloydGold::before {
   content: "";
   position: absolute;
   font-size: 0;
-  width: 20px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid #fff;
+  width: 400px;
+  height: 400px;
+  background: url(../img/gold-nugget-2269846_1280.jpg) no-repeat center center/cover;
+  transform: translate(320px, 25px);
+  border-radius: 50%;
+  z-index: 999;
+}
+.mouseCircle.lloydGem::before {
+  content: "";
+  position: absolute;
+  font-size: 0;
+  width: 400px;
+  height: 400px;
+  background: url(../img/crystal-2.jpg) no-repeat center center/cover;
+  transform: translate(180px, 25px);
   border-radius: 50%;
   z-index: 999;
 }
@@ -51,7 +63,7 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  line-height: 80px;
+  line-height: 70px;
 }
 .header i {
   font-size: 30px;
@@ -88,10 +100,11 @@ body {
 .mainVisual;;
  */
 .mainVisual {
+  padding-bottom: 200px;
 }
 .mainVisual .mainBg {
   position: relative;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 70px);
   width: 100%;
 }
 .mainVisual .mainBg01 {
@@ -113,9 +126,45 @@ body {
 }
 .mainVisual .inner {
   position: absolute;
-  top: 30%;
+  top: 33%;
   left: 20%;
-  font-size: 19px;
+  letter-spacing: -0.025em;
+}
+.mainVisual .inner h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.mainVisual .inner p {
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.mainVisual .inner p:last-of-type {
+  margin-bottom: 20px;
+}
+.mainVisual .inner a {
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid rgb(109, 109, 109);
+  padding: 0px 20px 2px 20px;
+  transition: 0.2s;
+}
+.mainVisual .inner a:hover {
+  background: #000;
+  color: #fff;
+}
+.mainVisual .mainBg01 p {
+  color: rgb(237, 237, 237);
+}
+.mainVisual .mainBg01 a {
+  border: 1px solid rgb(184, 184, 184);
+  transition: 0.2s;
+}
+.mainVisual .mainBg01 a:hover {
+  border: 1px solid rgb(184, 184, 184);
+  background: #fff;
+  color: #000;
 }
 /* 
 .mainVisual;;
@@ -126,20 +175,113 @@ body {
  */
 .lloyd {
   font-family: "Playfair Display", serif;
-  font-size: 21px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
-  padding: 300px 0;
 }
 .lloyd .container {
   text-align: center;
 }
 .lloyd h2 {
-  line-height: 1.45;
-  padding-bottom: 30px;
+  line-height: 1.35;
+  padding-bottom: 170px;
+}
+.lloyd h2 p {
+  font-family: "Gowun Batang", serif;
+  display: block;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.lloyd h2 span {
+  text-decoration-thickness: 1px;
+}
+.lloyd h2 .lloydGold {
+  color: gold;
+}
+.lloyd h2 .lloydGem {
+  color: rgb(255, 126, 169);
+}
+.lloyd a {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 /* 
 .lloyd;;
+ */
+
+/* 
+.best;;
+ */
+.best {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 150px;
+}
+.bestSlider {
+  width: 100%;
+}
+.best .feature {
+  height: 200px;
+}
+.best .feature01 {
+  background: url(../img/feature/r01_300.png) no-repeat center center/contain;
+}
+.best .feature02 {
+  background: url(../img/feature/r02_300.png) no-repeat center center/contain;
+}
+.best .feature03 {
+  background: url(../img/feature/r03_300.png) no-repeat center center/contain;
+}
+.best .feature04 {
+  background: url(../img/feature/r04_300.png) no-repeat center center/contain;
+}
+.best .feature05 {
+  background: url(../img/feature/r05_300.png) no-repeat center center/contain;
+}
+
+.best .bestNumber {
+  padding-top: 170px;
+  padding-bottom: 50px;
+  font-family: "Gothic A1", sans-serif;
+  color: rgb(240, 240, 240);
+}
+
+.best .productName {
+  position: absolute;
+  top: 310px;
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 6px;
+  text-transform: capitalize;
+  z-index: 999;
+}
+.best .productName p {
+  padding: 10px 0;
+}
+.best .arrows {
+  position: absolute;
+  top: 60px;
+  font-size: 30px;
+  color: rgb(137, 137, 137);
+}
+.best .arrows .leftArrow {
+  position: absolute;
+  left: -500px;
+}
+.best .arrows .rightArrow {
+  position: absolute;
+  right: -500px;
+}
+/* 
+.best;;
  */
 
 /* 
@@ -163,21 +305,39 @@ body {
 }
 .story h2 {
   font-family: "Playfair Display", serif;
-  font-size: 160px;
+  font-size: 150px;
   font-weight: 900;
   text-align: center;
   line-height: 1.4;
   transform: translateY(-62px);
   text-transform: uppercase;
-  padding-bottom: 255px;
+  padding-bottom: 205px;
 }
 .story .txt {
   padding-left: 60px;
 }
 .story strong {
+  position: relative;
+  font-size: 19px;
+  line-height: 1.4;
   display: inline-block;
   padding-bottom: 300px;
 }
+.story strong::before,
+.story strong::after {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  width: 1px;
+  height: 100px;
+
+  background: rgb(193, 193, 193);
+}
+.story strong::after {
+  top: 150px;
+}
+
 .story .right p {
   padding-bottom: 40px;
 }
@@ -187,6 +347,14 @@ body {
 .story .right {
   display: inline-block;
   margin-bottom: 100px;
+}
+.story .right,
+.story .left {
+  flex: 1;
+}
+.story .right i {
+  font-size: 15px;
+  vertical-align: 8%;
 }
 /* 
 .story;;
@@ -215,15 +383,15 @@ body {
 }
 .model h2 {
   font-family: "Playfair Display", serif;
-  font-size: 160px;
+  font-size: 150px;
   font-weight: 900;
-  text-align: right;
+  text-align: center;
   line-height: 1.4;
   text-transform: uppercase;
   padding: 40px 60px 300px 0;
 }
 .model .txt {
-  text-align: right;
+  text-align: center;
   padding-right: 60px;
 }
 .model strong {
@@ -240,42 +408,12 @@ body {
   display: inline-block;
   margin-bottom: 100px;
 }
+.model .left i {
+  font-size: 15px;
+  vertical-align: 8%;
+}
 /* 
 .model;;
- */
-
-/* 
-.best;;
- */
-.best {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 100px;
-}
-.featureSlider {
-  width: 100%;
-}
-.feature {
-  height: 600px;
-}
-.feature01 {
-  background: url(../img/feature/r01.png) no-repeat center center/contain;
-}
-.feature02 {
-  background: url(../img/feature/r02.png) no-repeat center center/contain;
-}
-.feature03 {
-  background: url(../img/feature/JW20220715164256149001.jpg) no-repeat center center/contain;
-}
-.feature04 {
-  background: url(../img/feature/JW20220728131108225001.jpg) no-repeat center center/contain;
-}
-.feature05 {
-  background: url(../img/feature/JW20221229201714271001.jpg) no-repeat center center/contain;
-}
-/* 
-.best;;
  */
 
 /* 
@@ -315,13 +453,95 @@ body {
 .tab .imgBox {
   display: none;
   justify-content: center;
-  gap: 20px;
+  gap: 0px;
 }
 .tab .imgBox.on {
   display: flex;
 }
 .tab .imgBox li {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
+.tab .imgBox ul {
+  flex: 1;
+}
+.tab .imgBox .center {
+  flex: 2;
+}
+
 /* 
  .tab;; */
+
+/* 
+ .footer;; */
+.footer {
+  font-family: "Noto Sans KR";
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  font-size: 13px;
+  font-weight: 300;
+  color: #ddd;
+  background: #333333;
+  line-height: 2;
+}
+.footer .container {
+  display: flex;
+  gap: 30px;
+}
+.footer .container > div:first-child {
+  flex: 7;
+}
+.footer .container > div:last-child {
+  flex: 5;
+}
+.footer .policy {
+  display: block;
+  font-size: 17px;
+  padding-right: 200px;
+  padding-bottom: 15px;
+}
+.footer .policy a ~ a {
+  position: relative;
+  padding-left: 10px;
+}
+.footer .policy a ~ a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 3px;
+  width: 1px;
+  height: 11px;
+  background: #ddd;
+}
+.footer span ~ span {
+  position: relative;
+}
+.footer span ~ span::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -7px;
+  width: 1px;
+  height: 11px;
+  background: #ddd;
+}
+.footer .left p > span {
+  padding-right: 10px;
+}
+
+.footer .right .as {
+  padding-top: 13px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 0.1;
+}
+.footer .right .tel {
+  font-size: 25px;
+  font-weight: 700;
+}
+.footer .right p {
+  padding-top: 15px;
+  line-height: 1;
+}
+/* 
+ .footer;; */

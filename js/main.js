@@ -2,7 +2,7 @@ $(function () {
   $(".mainSlider").slick({
     arrows: false,
     autoplay: true,
-    // autoplaySpeed: 0,
+    autoplaySpeed: 8000,
     speed: 500,
     pauseOnFocus: false,
     pauseOnHover: false,
@@ -10,7 +10,22 @@ $(function () {
     cssEase: "linear",
   });
 
-  $(".featureSlider").slick({});
+  $(".bestSlider").slick({
+    arrows: false,
+    asNavFor: ".productName",
+  });
+
+  $(".productName").slick({
+    slidesToShow: 1,
+    arrows: false,
+  });
+
+  $(".leftArrow").on("click", function () {
+    $(".bestSlider").slick("slickPrev");
+  });
+  $(".rightArrow").on("click", function () {
+    $(".bestSlider").slick("slickNext");
+  });
 
   var xCoor = $(window).on("mousemove", function (e) {
     $(".mouseX").text("mouseX : " + e.pageX);
@@ -22,5 +37,18 @@ $(function () {
   $(".category li").on("click", function () {
     var idx = $(this).index();
     $(".tabList").children().eq(idx).addClass("on").siblings().removeClass("on");
+  });
+
+  $(".lloydGold").on("mouseenter", function () {
+    $(".mouseCircle").addClass("lloydGold");
+  });
+  $(".lloydGold").on("mouseleave", function () {
+    $(".mouseCircle").removeClass("lloydGold");
+  });
+  $(".lloydGem").on("mouseenter", function () {
+    $(".mouseCircle").addClass("lloydGem");
+  });
+  $(".lloydGem").on("mouseleave", function () {
+    $(".mouseCircle").removeClass("lloydGem");
   });
 });
