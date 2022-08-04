@@ -21,6 +21,8 @@ $(function () {
     arrows: false,
     dots: true,
     autoplay: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
   });
 
   $(".productName").slick({
