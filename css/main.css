@@ -522,7 +522,6 @@ body {
   justify-content: center;
   gap: 60px;
   padding-bottom: 30px;
-  cursor: pointer;
 }
 .tab h2 {
   display: block;
@@ -530,7 +529,9 @@ body {
   margin-bottom: 30px;
 }
 .tab .category li {
+  font-size: 17px;
   width: 50px;
+  cursor: pointer;
 }
 .tab .imgBox {
   display: none;
