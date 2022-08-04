@@ -127,11 +127,11 @@ body {
 .mainVisual .inner {
   position: absolute;
   top: 33%;
-  left: 20%;
+  left: 18.7%;
   letter-spacing: -0.025em;
 }
 .mainVisual .inner h2 {
-  font-size: 27px;
+  font-size: 33px;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -205,12 +205,6 @@ body {
   transform: translateX(-50%);
   font-size: 15px;
 } */
-.lloyd h2 .lloydGold {
-  color: gold;
-}
-.lloyd h2 .lloydGem {
-  color: rgb(255, 126, 169);
-}
 .lloyd a {
   font-size: 30px;
   font-weight: 700;
