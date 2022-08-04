@@ -522,6 +522,7 @@ body {
   justify-content: center;
   gap: 60px;
   padding-bottom: 30px;
+  cursor: pointer;
 }
 .tab h2 {
   display: block;
