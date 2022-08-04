@@ -2,7 +2,7 @@ $(function () {
   $(".mainSlider").slick({
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 8000,
+    autoplaySpeed: 5000,
     speed: 500,
     pauseOnFocus: false,
     pauseOnHover: false,
@@ -17,9 +17,15 @@ $(function () {
     centerPadding: "25%",
   });
 
-  $(".productName").slick({
-    slidesToShow: 1,
+  $(".custom").slick({
     arrows: false,
+    dots: true,
+    autoplay: true,
+  });
+
+  $(".productName").slick({
+    arrows: false,
+    slidesToShow: 1,
   });
 
   $(".leftArrow").on("click", function () {
