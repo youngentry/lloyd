@@ -1,4 +1,9 @@
 $(function () {
+  $(".menuBtn").on("click", function (e) {
+    e.preventDefault();
+    $(".menu").toggleClass("on");
+  });
+
   $(".mainSlider").slick({
     arrows: false,
     autoplay: true,
@@ -15,6 +20,9 @@ $(function () {
     asNavFor: ".productName",
     centerMode: true,
     centerPadding: "25%",
+  });
+  $(".bestSlider").on("afterChange", function (e, s, c) {
+    $(".bestNumber").text(`0${c + 1} / 0${s.slideCount}`);
   });
 
   $(".custom").slick({
@@ -46,6 +54,7 @@ $(function () {
 
   $(".category li").on("click", function () {
     var idx = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
     $(".tabList").children().eq(idx).addClass("on").siblings().removeClass("on");
   });
 
@@ -60,5 +69,14 @@ $(function () {
   });
   $(".lloydGem").on("mouseleave", function () {
     $(".mouseCircle").removeClass("lloydGem");
+  });
+
+  $(".necklace li").on("click", function () {
+    $(this).children("figure").addClass("on");
+    $(this).siblings().children("figure").removeClass("on");
+    $(this).parent().siblings().children().children().removeClass("on");
+
+    var imgSrc = $(this).children().children().attr("src");
+    $(".centerImg").attr("src", `${imgSrc}`);
   });
 });
