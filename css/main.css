@@ -182,6 +182,7 @@ body {
 }
 .mainVisual .mainBg02 {
   color: #000;
+  padding-top: 350px;
   background: url(../img/main/20220728120522894001.jpg) no-repeat top center/cover;
 }
 .mainVisual .mainBg03 {
