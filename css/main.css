@@ -64,10 +64,11 @@ body {
 .header;;
  */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
+  width: 100%;
   line-height: 70px;
   background: #2c4c3f;
   z-index: 9999;
@@ -103,14 +104,15 @@ body {
   position: absolute;
   top: 70px;
   right: -100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh + 70px);
   width: 50%;
+  line-height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 600;
   color: #000;
   background: #d88493;
   transition: 0.5s;
@@ -168,10 +170,10 @@ body {
   padding-bottom: 150px;
 }
 .mainVisual .mainBg {
-  height: calc(100vh - 70px);
+  height: calc(100vh);
   display: flex;
   justify-content: center;
-  padding-top: 200px;
+  padding-top: 300px;
   width: 100%;
 }
 .mainVisual .mainBg01 {
@@ -179,11 +181,11 @@ body {
 }
 .mainVisual .mainBg02 {
   color: #000;
-  background: url(../img/main/20220728120522894001.jpg) no-repeat center center/cover;
+  background: url(../img/main/20220728120522894001.jpg) no-repeat top center/cover;
 }
 .mainVisual .mainBg03 {
   color: #000;
-  background: url(../img/main/20220126133801714001.jpg) no-repeat center center/cover;
+  background: url(../img/main/20220126133801714001.jpg) no-repeat top center/cover;
 }
 .mainVisual .slick-arrow {
   position: absolute;
@@ -347,6 +349,7 @@ body {
   top: 70px;
   font-size: 30px;
   color: rgb(137, 137, 137);
+  cursor: pointer;
 }
 .best .arrows .leftArrow {
   position: absolute;
@@ -483,7 +486,7 @@ body {
 }
 .model h2 {
   font-family: "Playfair Display", serif;
-  font-size: 80px;
+  font-size: 95px;
   font-weight: 700;
   text-align: center;
   line-height: 1.4;
@@ -591,6 +594,7 @@ body {
   background: #2c4c3f;
   border-radius: 3px;
   border: none;
+  cursor: pointer;
 }
 .custom .slick-active button {
   background: #fff;
@@ -618,9 +622,10 @@ body {
 .tab h2 {
   font-family: "Playfair Display", serif;
   display: block;
-  font-size: 33px;
+  font-size: 27px;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding-left: 16px;
   text-transform: uppercase;
 }
 .tab .category li {
@@ -638,8 +643,8 @@ body {
   display: none;
   justify-content: center;
   gap: 0px;
-  border-bottom: 1px solid #dee2e6;
-  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.5);
+  border-right: 1px solid rgba(17, 17, 17, 0.5);
 }
 .tab .imgBox.on {
   display: flex;
@@ -656,7 +661,7 @@ body {
   right: -1px;
   width: 1px;
   height: 1px;
-  background: #dee2e6;
+  background: rgba(17, 17, 17, 0.5);
 }
 .tab .imgBox ul {
   flex: 1;
@@ -676,7 +681,7 @@ body {
   transform: translateY(-25px);
 }
 .imgBox figure {
-  border: 1px solid #dee2e6;
+  border: 1px solid rgba(17, 17, 17, 0.5);
   border-right: none;
   border-bottom: none;
 }
@@ -689,11 +694,12 @@ body {
   height: 25%;
   padding: 10px 0;
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.05em;
-  color: #000;
-  background: #dee2e6;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.5);
   transition: 0.3s;
+  cursor: default;
 }
 .imgBox figure.on p {
   bottom: 0;
@@ -703,6 +709,12 @@ body {
   display: block;
   margin-top: 3px;
   letter-spacing: -0.05em;
+  padding-left: 12px;
+  cursor: pointer;
+}
+.imgBox figure span i {
+  font-size: 13px;
+  vertical-align: 1%;
 }
 .imgBox .center li {
   cursor: all-scroll;
