@@ -110,7 +110,7 @@ body {
   width: 100%;
 }
 .mainVisual .mainBg01 {
-  background: url(../img/main/20220728163824091001.jpg) no-repeat center center/cover;
+  background: url(../img/main/20220728163824091001.jpg) no-repeat top center/cover;
 }
 .mainVisual .mainBg02 {
   color: #000;
@@ -185,14 +185,17 @@ body {
   text-align: center;
 }
 .lloyd h2 {
+  font-size: 33px;
+  font-weight: 500;
   line-height: 1.35;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
-.lloyd h2 p {
+.lloyd p {
   font-family: "Gowun Batang", serif;
   display: block;
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  line-height: 1.2;
 }
 .lloyd h2 span {
   position: relative;
@@ -545,9 +548,12 @@ body {
   gap: 60px;
 }
 .tab h2 {
+  font-family: "Playfair Display", serif;
   display: block;
-  font-size: 30px;
+  font-size: 33px;
+  font-weight: 500;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 .tab .category li {
   font-size: 18px;
